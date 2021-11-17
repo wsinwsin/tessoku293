@@ -10,3 +10,5 @@
 `pip install fugashi ipadic`
 
 `pip install pandas`
+
+`pip install numpy`

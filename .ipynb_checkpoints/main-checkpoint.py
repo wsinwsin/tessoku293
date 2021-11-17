@@ -3,9 +3,13 @@ from transformers import AutoTokenizer, BertForSequenceClassification
 import pandas as pd
 import numpy as np
 
-def search_print(text, kk = 1):# キーワードに沿った鉄則を出力する
+def search_print(text, te_list, my_model, tokenizer, kk):# キーワードに沿った鉄則を出力する
     #text:キーワード:str
     #kk: top kk まで出力可能
+    #te_list :鉄則293{1: 'プロジェクトの行く手を照らせ', 2: '常に目的を意識せよ', 3: 'テストは幅広い顧客へのサービス業だと心得よ',...}
+    #my_model:トークン化したものを1~293に分類するモデル
+    #tokenizer:トークン化するモデル
+    
     t = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
     result = my_model(**t)
     pt_predictions = nn.functional.softmax(result.logits, dim=-1)
