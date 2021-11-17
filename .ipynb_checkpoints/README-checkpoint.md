@@ -15,6 +15,6 @@
 
 # モデルを使う上で必要なファイル
 
-[学習したモデル](https://drive.google.com/file/d/1-lc31Y8m1g6dDMNehWJkg5MAurwuMmqq/view?usp=sharing)
+[checkpoint-3500](https://drive.google.com/file/d/1-lc31Y8m1g6dDMNehWJkg5MAurwuMmqq/view?usp=sharing)
 
 [出力に必要なデータ](https://drive.google.com/file/d/1-rCCdK0N7ssbXLIlouxQjxx5zf3hGE8Q/view?usp=sharing)
